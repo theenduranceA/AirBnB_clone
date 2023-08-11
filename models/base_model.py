@@ -20,12 +20,13 @@ class BaseModel:
                 if key in "created_at" or key in "updated_at":
                     setattr(self, key, datetime.strptime(
                         value, '%Y-%m-%dT%H:%M:%S.%f'))
-                elif key is not "__class__":
+                elif key != "__class__":
                     setattr(self, key, value)
         else:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            models.storage.new(self)
 
     def __str__(self):
         """Print methods in string."""
@@ -40,6 +41,7 @@ class BaseModel:
         """
 
         self.updated_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """
