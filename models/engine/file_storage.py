@@ -6,8 +6,14 @@ to a JSON file and deserializes JSON file to instances.
 
 import os
 import json
-import models
 import datetime
+from models.user import User
+from models.place import Place
+from models.amenity import Amenity
+from models.city import City
+from models.state import State
+from models.review import Review
+from models.base_model import BaseModel
 
 
 class FileStorage:
