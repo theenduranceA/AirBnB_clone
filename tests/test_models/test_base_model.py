@@ -12,9 +12,9 @@ class TestBase_Model(unittest.TestCase):
     def test_docstring(self):
         '''test if funcions, methods, classes
         and modules have docstring'''
-        msj = "Módulo does not has docstring"
+        msj = "Módulo does not have docstring"
         self.assertIsNotNone(models.base_model.__doc__, msj)  # Modules
-        msj = "Clase does not has docstring"
+        msj = "Class does not have docstring"
         self.assertIsNotNone(BaseModel.__doc__, msj)  # Classes
 
     def test_executable_file(self):
