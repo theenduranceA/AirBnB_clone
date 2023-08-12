@@ -17,6 +17,7 @@ class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
     class_list = ['BaseModel', 'User', 'State', 'City', 'Amenity', 'Place',
                   'Review']
+
     def do_quit(self, line):
         """Quit command to exit the program."""
         return True
@@ -28,7 +29,7 @@ class HBNBCommand(cmd.Cmd):
     def emptyline(self):
         """Nothing is executed with this command."""
         pass
-    
+
     def do_create(self, args):
         """Create command to create a new instance of BaseModel, save it in a
         JSON file and prints the id.
@@ -44,7 +45,7 @@ class HBNBCommand(cmd.Cmd):
             instance.save()
             print(instance.id)
         return
-    
+
     @classmethod
     def verify_class(cls, line):
         """Static method to verify inputed class"""
@@ -122,7 +123,6 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
             return False
         print(to_print)
-
 
 
 if __name__ == '__main__':
