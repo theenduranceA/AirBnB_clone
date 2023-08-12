@@ -174,6 +174,7 @@ class HBNBCommand(cmd.Cmd):
             else:
                 HBNBCommand.do_update(self, class_name + ' ' + split3[0] +
                                       ' ' + split3[1] + ' ' + split3[2])
+
     def do_update(self, args):
         """Updates an instance based on the class name and id
         by adding or updating attribute (save the change into the JSON file).
