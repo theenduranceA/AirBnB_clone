@@ -118,8 +118,7 @@ class HBNBCommand(cmd.Cmd):
         if len(line) == 0:
             for v in objects.values():
                 to_print.append(str(v))
-            print(to_print)
-        elif line[0] in HBNBCommand.class_list:
+        elif line[0] not in HBNBCommand.class_list:
             for k, v in objects.items():
                 if line[0] in k:
                     to_print.append(str(v))
