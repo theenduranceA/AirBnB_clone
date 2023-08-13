@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-unitest for test_state
+unitest for state
 """
 import sys
 import unittest
