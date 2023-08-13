@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-unitest for test_city
+unitest for city
 """
 import sys
 import unittest
