@@ -8,7 +8,7 @@ from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
 
 
-class Test_FileStorage(Unittest, TestCase):
+class Test_FileStorage(unittest.TestCase):
     """A class for File storage test cases."""
 
     def setUp(self):
