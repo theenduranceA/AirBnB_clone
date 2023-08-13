@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-
+"""
+unitest for Amenity
+"""
 import sys
 import unittest
 import inspect
