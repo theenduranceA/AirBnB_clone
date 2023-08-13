@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-Created on Aug 12 14:34 2023
-@author: JOnah Emmanuel and Endurance Aneke
+Created on Fri Jun  5 15:43:09 2020
+@author: meco
 """
 import sys
 import unittest
@@ -46,12 +46,6 @@ class TestHBNBCommand(unittest.TestCase):
     def test_module_docstring(self):
         """
         Tests if module docstring documentation exist
-        """
-        self.assertTrue(len(HBNBCommand.__doc__) >= 1)
-
-    def test_class_docstring(self):
-        """
-        Tests if class docstring documentation exist
         """
         self.assertTrue(len(HBNBCommand.__doc__) >= 1)
 
