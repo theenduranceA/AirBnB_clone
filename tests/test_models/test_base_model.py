@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-
+"""
+unitest for base_model
+"""
 import sys
 import unittest
 import inspect
